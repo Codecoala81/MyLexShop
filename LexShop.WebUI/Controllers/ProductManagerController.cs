@@ -8,6 +8,7 @@ using LexShop.DataAccess.InMemory;
 
 namespace LexShop.WebUI.Controllers
 {
+    // Check git
     public class ProductManagerController : Controller
     {
         ProductRepository context;
