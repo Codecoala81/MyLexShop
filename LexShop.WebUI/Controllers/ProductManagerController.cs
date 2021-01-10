@@ -8,7 +8,6 @@ using LexShop.DataAccess.InMemory;
 
 namespace LexShop.WebUI.Controllers
 {
-    // Check git
     public class ProductManagerController : Controller
     {
         ProductRepository context;
@@ -16,7 +15,6 @@ namespace LexShop.WebUI.Controllers
         {
             context = new ProductRepository();
         }
-        // GET: ProductManager
         public ActionResult Index()
         {
             List<Product> products = context.Collection().ToList();
