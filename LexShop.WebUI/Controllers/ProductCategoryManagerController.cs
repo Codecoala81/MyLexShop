@@ -39,7 +39,7 @@ namespace LexShop.WebUI.Controllers
                 return RedirectToAction("Index");
             }
         }
-        public ActionResult Edit1(string Id)
+        public ActionResult Edit(string Id)
         {
             ProductCategory productCategory = context.Find(Id);
             if (productCategory == null)
@@ -51,6 +51,7 @@ namespace LexShop.WebUI.Controllers
                 return View(productCategory);
             }
         }
+        [HttpPost]
         public ActionResult Edit(ProductCategory productCategory, string Id)
         {   //productCategory var ursprungligen product
             ProductCategory productCategorToEdit = context.Find(Id);
@@ -94,7 +95,7 @@ namespace LexShop.WebUI.Controllers
             {
                 context.Delete(Id);
                 context.Commit();
-                return View("Index");
+                return RedirectToAction("Index");
             }
         }
     }
