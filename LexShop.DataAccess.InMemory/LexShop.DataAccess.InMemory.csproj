@@ -50,6 +50,10 @@
       <Project>{6b0dee09-9f2c-4ba9-aa2b-7b755d30bc78}</Project>
       <Name>LexShop.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LexShop.DataAccess.SQL\LexShop.DataAccess.SQL.csproj">
+      <Project>{80a677fc-e3a6-4cb9-9d07-e6ba79fbb22c}</Project>
+      <Name>LexShop.DataAccess.SQL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
